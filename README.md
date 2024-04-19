@@ -24,9 +24,9 @@ Cash Book is a financial journal that contains all cash receipts and disbursemen
 
 <table>
   <tr>
-      <td>Login Screen</td>
-      <td>Home Screen</td>
-      <td>Add User Screen</td>
+      <td>Cash in card </td>
+      <td>Custom date selector</td>
+      <td>Cash out card</td>
   </tr>
   <tr>
     <td><img src="https://github.com/VinayakHinduja/Cash-Book/blob/main/ss/Screenshot-2024%20(1).jpg" width="300" height="450" /></td>
@@ -37,9 +37,9 @@ Cash Book is a financial journal that contains all cash receipts and disbursemen
 
 <table>
   <tr>
-     <td>Chat Screen</td>
-     <td>Chat Screen</td>
-     <td>Emoji Keyboard</td>
+     <td>Home Screen</td>
+     <td>Edit Screen</td>
+     <td>Edit Screen</td>
   </tr>
   <tr>
     <td><img src="https://github.com/VinayakHinduja/Cash-Book/blob/main/ss/Screenshot-2024%20(4).jpg" width="300" height="450" /></td>
@@ -50,14 +50,14 @@ Cash Book is a financial journal that contains all cash receipts and disbursemen
  
  <table>
   <tr>
-     <td>More options on Image</td>
-     <td>More options on a message</td>
-     <td>More options on other users message</td>
+     <td>Custom date selector</td>
+     <td>Home Screen after changing both entries</td>
+     <td>Confirmation of deletion after swiping right to left on a entry</td>
   </tr>
   <tr>
     <td><img src="https://github.com/VinayakHinduja/Cash-Book/blob/main/ss/Screenshot-2024%20(7).jpg" width="300" height="450" /></td>
     <td><img src="https://github.com/VinayakHinduja/Cash-Book/blob/main/ss/Screenshot-2024%20(8).jpg" width="300" height="450" /></td>
-    <td><img src="https://github.com/VinayakHinduja/Cash-Book/blob/main/ss/Screenshot-2024%20(9s).jpg" width="300" height="450" /></td>
+    <td><img src="https://github.com/VinayakHinduja/Cash-Book/blob/main/ss/Screenshot-2024%20(9).jpg" width="300" height="450" /></td>
   </tr>
  </table>
 
