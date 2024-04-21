@@ -1,5 +1,5 @@
 
-# Cash-Book
+# CashBook
 
 Cash Book is a financial journal that contains all cash receipts and disbursements, including cash in and cash-out. You can monitor your daily expenses. You can edit the entries, date and time of selected record. It is an simple offline application.
 
