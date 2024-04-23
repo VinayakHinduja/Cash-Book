@@ -187,16 +187,24 @@ class _HomeScreenState extends State<HomeScreen>
                                     flex: 2,
                                     child: Padding(
                                       padding: EdgeInsets.only(left: 25),
-                                      child: Text('Date/Remark',
-                                          style: kAppBarTextStyle),
+                                      child: Text(
+                                        'Date/Remark',
+                                        style: kAppBarTextStyle,
+                                      ),
                                     ),
                                   ),
                                   Expanded(
-                                      child: Text('Cr/Dr',
-                                          style: kAppBarTextStyle)),
+                                    child: Text(
+                                      'Cr/Dr',
+                                      style: kAppBarTextStyle,
+                                    ),
+                                  ),
                                   Expanded(
-                                      child: Text('Balance',
-                                          style: kAppBarTextStyle)),
+                                    child: Text(
+                                      'Balance',
+                                      style: kAppBarTextStyle,
+                                    ),
+                                  ),
                                 ],
                               ),
                             ],

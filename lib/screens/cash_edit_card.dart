@@ -115,7 +115,7 @@ class _CashEditCardState extends State<CashEditCard> {
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 43),
@@ -132,7 +132,7 @@ class _CashEditCardState extends State<CashEditCard> {
               child: Form(
                 key: formKey,
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
@@ -309,39 +309,37 @@ class _CashEditCardState extends State<CashEditCard> {
                         ],
                       ),
                     ),
-                    Center(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          RoundedButton(
-                            text: 'CANCEL',
-                            splashColor: Colors.blueGrey,
-                            style: kDeleteButtonTextStyle,
-                            color: Colors.blueGrey.shade400,
-                            onPressed: () => Navigator.pop(context),
-                          ),
-                          RoundedButton(
-                            text: 'UPDATE',
-                            style: kRoundedButtonTextStyle,
-                            color: Colors.blue,
-                            onPressed: () async {
-                              valid = formKey.currentState!.validate();
-                              if (!valid) return;
-                              formKey.currentState!.save();
-                              await EntryService()
-                                  .updateEntry(
-                                    id: int.parse(widget.id),
-                                    amount: editableEntry!.amount,
-                                    remark: editableEntry!.remark,
-                                    type: newType!.name,
-                                    time: newTime!,
-                                    rwTime: newRwTime!,
-                                  )
-                                  .whenComplete(() => Navigator.pop(context));
-                            },
-                          ),
-                        ],
-                      ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        RoundedButton(
+                          text: 'CANCEL',
+                          splashColor: Colors.blueGrey,
+                          style: kDeleteButtonTextStyle,
+                          color: Colors.blueGrey.shade400,
+                          onPressed: () => Navigator.pop(context),
+                        ),
+                        RoundedButton(
+                          text: 'UPDATE',
+                          style: kRoundedButtonTextStyle,
+                          color: Colors.blue,
+                          onPressed: () async {
+                            valid = formKey.currentState!.validate();
+                            if (!valid) return;
+                            formKey.currentState!.save();
+                            await EntryService()
+                                .updateEntry(
+                                  id: int.parse(widget.id),
+                                  amount: editableEntry!.amount,
+                                  remark: editableEntry!.remark,
+                                  type: newType!.name,
+                                  time: newTime!,
+                                  rwTime: newRwTime!,
+                                )
+                                .whenComplete(() => Navigator.pop(context));
+                          },
+                        ),
+                      ],
                     ),
                   ],
                 ),
